@@ -1,0 +1,27 @@
+{
+  "data": {
+    "archived": false,
+    "color": "dark-blue",
+    "current_status": {
+      "author": {
+        "name": "PROJECT AUTHOR"
+      },
+      "color": "green",
+      "created_by": {
+        "name": "PROJECT CREATOR"
+      },
+      "html_text": "\u003cbody\u003eSTATUS NOTES\u003c/body\u003e",
+      "text": "STATUS NOTES",
+      "title": "Status Update - Jun 15"
+    },
+    "default_view": "board",
+    "due_date": "2019-09-15",
+    "due_on": "2019-09-15",
+    "html_notes": "\u003cbody\u003ePROJECT NOTES\u003c/body\u003e",
+    "is_template": false,
+    "name": "PROJECT NAME",
+    "notes": "NOTES",
+    "public": false,
+    "start_on": "2019-09-14"
+  }
+}

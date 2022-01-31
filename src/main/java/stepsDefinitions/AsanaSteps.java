@@ -4,7 +4,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import models.Workspace;
-import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import testBase.TestBase;
@@ -47,7 +46,6 @@ public class AsanaSteps extends TestBase {
 
     @Given("I have a new project object")
     public void i_have_a_new_project_object() {
-//        createProject = JsonConnector.fillWorkspaceData(new File(NEW_PROJECT_PATH));
         requestBuilder = new RequestBuilder();
     }
 
@@ -62,6 +60,8 @@ public class AsanaSteps extends TestBase {
         response.then()
                 .log()
                 .all()
+                .body("data.owner.name", is("Adrian"))
+                .body("data.name", is("Homework new project"))
                 .statusCode(201);
         response = null;
         logger.info("Validation pass");
